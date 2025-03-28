@@ -31,8 +31,8 @@
 
     <!-- favicons
     ================================================== -->
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    {% comment %} <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon"> {% endcomment %}
     <link href="https://fonts.googleapis.com/css2?family=Google+Sans:wght@400;500;700&display=swap" rel="stylesheet">
     <style>
         body {
@@ -49,7 +49,7 @@
     <header class="s-header">
 
         <div class="header-logo">
-            <a class="site-logo mt-5" href="{% url 'home' %}" style="width: 450px;height: 310px; margin-top: 100px;">
+            <a class="site-logo mt-5" href="{% url 'home' %}" style=" width: 352px;height: 300px; margin-top: 170px;">
                 <img src="{% static 'landing/images/logo.png' %}" >
             </a>
         </div>
@@ -129,7 +129,7 @@
                     <a href="#contact" class="smoothscroll btn btn--stroke">
                         Start a Project
                     </a>
-                    <a href="#about" class="smoothscroll btn btn--stroke">
+                    <a href="#works" class="smoothscroll btn btn--stroke">
                         More About Us
                     </a>
                 </div>
@@ -195,19 +195,19 @@
         <div class="row about-stats stats block-1-4 block-m-1-2 block-mob-full" data-aos="fade-up">
                 
             <div class="col-block stats__col ">
-                <div class="stats__count">127</div>
-                <h5>Awards Received</h5>
+                <div class="stats__count">2</div>
+                <h5>Since</h5>
             </div>
             <div class="col-block stats__col">
-                <div class="stats__count">1505</div>
+                <div class="stats__count">26</div>
                 <h5>Cups of Coffee</h5>
             </div>
             <div class="col-block stats__col">
-                <div class="stats__count">109</div>
+                <div class="stats__count">12</div>
                 <h5>Projects Completed</h5>
             </div>
             <div class="col-block stats__col">
-                <div class="stats__count">102</div>
+                <div class="stats__count">12</div>
                 <h5>Happy Clients</h5> 
             </div>
 
@@ -346,6 +346,14 @@
                     <div class="works-item large" data-aos="fade-up">
                         <iframe data-src="https://themewagon.github.io/iPortfolio/" title="iPortfolio"></iframe>
                         <div class="works-label">Portfolio Design</div>
+                    </div>
+                    <div class="works-item large" data-aos="fade-up">
+                        <iframe data-src="https://themewagon.github.io/nico/" title="nico"></iframe>
+                        <div class="works-label">Service center Booking</div>
+                    </div>
+                    <div class="works-item large" data-aos="fade-up">
+                        <iframe data-src="https://themewagon.github.io/stylish/" title="nico"></iframe>
+                        <div class="works-label">Foot Wear</div>
                     </div>
                 </div>
             </section>
@@ -595,14 +603,14 @@
                     </div> {% endcomment %}
 
                     <div class="cinfo">
-                        <h5>Email Us At</h5>
+                        <h5>Email Us </h5>
                         <p>
                             codespikestudio@gmail.com<br>
                         </p>
                     </div>
 
                     <div class="cinfo">
-                        <h5>Call Us At</h5>
+                        <h5>Call Us </h5>
                         <p>
                             Phone: (+91) 7736500760<br>
                             {% comment %} Mobile: (+63) 555 0100<br>
@@ -649,6 +657,70 @@
         </div> <!-- end contact-content -->
 
     </section> <!-- end s-contact -->
+
+    <style>
+        /* Floating button container */
+        .fab-container {
+            position: fixed;
+            bottom: 200px;
+            right: 50px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        /* Individual floating buttons */
+        .fab {
+            width: 70px;
+            height: 70px;
+            background-color: #25D366; /* WhatsApp green */
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-decoration: none;
+            font-size: 30px; /* Increased icon size */
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        /* Different colors for each button */
+        .fab.phone { background-color: #007bff; } /* Blue */
+        .fab.email { background-color: grey; } /* Orange */
+
+        /* Hover effect */
+        .fab:hover {
+            transform: scale(1.1);
+            opacity: 0.9;
+        }
+        .s-works{
+            padding: 0 0 6rem 0 !important;
+        }
+        .s-services {
+            padding-top: 10.2rem !important;
+        }
+        .s-about{
+            padding-top: 10.2rem !important;
+        }
+        .s-work{
+            padding-top: 10.2rem !important;
+        }
+    </style>
+
+
+    <div class="fab-container">
+        <a href="https://wa.me/917736500760" class="fab whatsapp" target="_blank">
+            <i class="fa fa-whatsapp"></i>
+        </a>
+        <a href="tel:+917736500760" class="fab phone">
+            <i class="fa fa-phone"></i>
+        </a>
+        <a href="mailto:codespikestudi@gmail.com" class="fab email">
+            <i class="fa fa-envelope"></i>
+        </a>
+    </div>
+
 
 
     <!-- footer
