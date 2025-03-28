@@ -49,7 +49,7 @@
     <header class="s-header">
 
         <div class="header-logo">
-            <a class="site-logo mt-5" href="{% url 'home' %}" style="width: 360px;height: 310px; margin-top: 265px;">
+            <a class="site-logo mt-5" href="{% url 'home' %}" style="width: 450px;height: 310px; margin-top: 100px;">
                 <img src="{% static 'landing/images/logo.png' %}" >
             </a>
         </div>
@@ -63,30 +63,33 @@
                 
                 <ul class="header-nav__list">
                     <li class="current"><a class="smoothscroll"  href="#home" title="home">Home</a></li>
-                    <li><a class="smoothscroll"  href="#about" title="about">About</a></li>
                     <li><a class="smoothscroll"  href="#services" title="services">Services</a></li>
                     <li><a class="smoothscroll"  href="#works" title="works">Works</a></li>
-                    <li><a class="smoothscroll"  href="#clients" title="clients">Clients</a></li>
                     <li><a class="smoothscroll"  href="#contact" title="contact">Contact</a></li>
                 </ul>
     
-                <p>Perspiciatis hic praesentium nesciunt. Et neque a dolorum <a href='#0'>voluptatem</a> porro iusto sequi veritatis libero enim. Iusto id suscipit veritatis neque reprehenderit.</p>
+                <p>We are a dynamic startup empowering modern businesses with full-stack e-commerce solutions. Specializing in ROI-driven web development, intelligent automation, and growth-focused digital strategies, we deliver enterprise-grade technology at startup-friendly budgets.</p>
     
                 <ul class="header-nav__social">
                     <li>
-                        <a href="#"><i class="fa fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/codespikestudio" target="_blank">
+                            <i class="fa fa-instagram" aria-hidden="true"></i>
+                        </a>
                     </li>
                     <li>
-                        <a href="#"><i class="fa fa-twitter"></i></a>
+                        <a href="tel:+917736500760">
+                            <i class="fa fa-phone" aria-hidden="true"></i>
+                        </a>
                     </li>
                     <li>
-                        <a href="#"><i class="fa fa-instagram"></i></a>
+                        <a href="mailto:codespikestudi@gmail.com">
+                            <i class="fa fa-envelope" aria-hidden="true"></i>
+                        </a>
                     </li>
                     <li>
-                        <a href="#"><i class="fa fa-behance"></i></a>
-                    </li>
-                    <li>
-                        <a href="#"><i class="fa fa-dribbble"></i></a>
+                        <a href="https://wa.me/917736500760" target="_blank">
+                            <i class="fa fa-whatsapp" aria-hidden="true"></i>
+                        </a>
                     </li>
                 </ul>
 
@@ -146,19 +149,24 @@
 
         <ul class="home-social">
             <li>
-                <a href="#0"><i class="fa fa-facebook" aria-hidden="true"></i><span>Facebook</span></a>
+                <a href="https://www.instagram.com/codespikestudio" target="_blank">
+                    <i class="fa fa-instagram" aria-hidden="true"></i>
+                </a>
             </li>
             <li>
-                <a href="#0"><i class="fa fa-twitter" aria-hidden="true"></i><span>Twiiter</span></a>
+                <a href="tel:+917736500760">
+                    <i class="fa fa-phone" aria-hidden="true"></i>
+                </a>
             </li>
             <li>
-                <a href="#0"><i class="fa fa-instagram" aria-hidden="true"></i><span>Instagram</span></a>
+                <a href="mailto:codespikestudi@gmail.com">
+                    <i class="fa fa-envelope" aria-hidden="true"></i>
+                </a>
             </li>
             <li>
-                <a href="#0"><i class="fa fa-behance" aria-hidden="true"></i><span>Behance</span></a>
-            </li>
-            <li>
-                <a href="#0"><i class="fa fa-dribbble" aria-hidden="true"></i><span>Dribbble</span></a>
+                <a href="https://wa.me/917736500760" target="_blank">
+                    <i class="fa fa-whatsapp" aria-hidden="true"></i>
+                </a>
             </li>
         </ul> 
         <!-- end home-social -->
@@ -180,8 +188,7 @@
         <div class="row about-desc" data-aos="fade-up">
             <div class="col-full">
                 <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt. 
-                </p>
+                    At Codespike Studio, we specialize in delivering high-performance E-commerce platforms, stunning portfolios, seamless payroll systems, engaging landing pages, custom admin panels, and powerful business reports. We also cater to startups, providing tailored software and website development to turn your ideas into reality.                </p>
             </div>
         </div> <!-- end about-desc -->
 
@@ -292,199 +299,124 @@
                 
             <div class="row section-header has-bottom-sep light-sep" data-aos="fade-up">
                 <div class="col-full">
-                    <h3 class="subhead">Recent Works</h3>
-                    <h1 class="display-2 display-2--light">We love what we do, check out some of our latest works</h1>
+                    <h3 class="subhead">Our Designs</h3>
+                    <h1 class="display-2 display-2--light">We love what we do, check out some of our Demo Design Patterns</h1>
                 </div>
             </div> <!-- end section-header -->
 
         </div> <!-- end intro-wrap -->
 
         <div class="row works-content">
-            <div class="col-full masonry-wrap">
-                <div class="masonry">
-    
-                    <div class="masonry__brick" data-aos="fade-up">
-                        <div class="item-folio">
-                                
-                            <div class="item-folio__thumb">
-                                <a href="{% static 'landing/images/portfolio/gallery/g-shutterbug.jpg' %}" class="thumb-link" title="Shutterbug" data-size="1050x700">
-                                    <img src="{% static 'landing/images/portfolio/lady-shutterbug.jpg' %}" 
-                                         srcset="{% static 'landing/images/portfolio/lady-shutterbug.jpg' %} 1x, {% static 'landing/images/portfolio/lady-shutterbug@2x.jpg' %} 2x" alt="">
-                                </a>
-                            </div>
-    
-                            <div class="item-folio__text">
-                                <h3 class="item-folio__title">
-                                    Shutterbug
-                                </h3>
-                                <p class="item-folio__cat">
-                                    Branding
-                                </p>
-                            </div>
-    
-                            <a href="https://www.behance.net/" class="item-folio__project-link" title="Project link">
-                                <i class="icon-link"></i>
-                            </a>
-    
-                            <div class="item-folio__caption">
-                                <p>Vero molestiae sed aut natus excepturi. Et tempora numquam. Temporibus iusto quo.Unde dolorem corrupti neque nisi.</p>
-                            </div>
-    
-                        </div>
-                    </div> <!-- end masonry__brick -->
+            <section id='works' class="s-works">
 
-                    <div class="masonry__brick" data-aos="fade-up">
-                        <div class="item-folio">
-                                
-                            <div class="item-folio__thumb">
-                                <a href="{% static 'landing/images/portfolio/gallery/g-woodcraft.jpg' %}" class="thumb-link" title="Woodcraft" data-size="1050x700">
-                                    <img src="{% static 'landing/images/portfolio/woodcraft.jpg' %}" 
-                                         srcset="{% static 'landing/images/portfolio/woodcraft.jpg' %} 1x, {% static 'landing/images/portfolio/woodcraft@2x.jpg' %} 2x" alt="">
-                                </a>
-                            </div>
-    
-                            <div class="item-folio__text">
-                                <h3 class="item-folio__title">
-                                    Woodcraft
-                                </h3>
-                                <p class="item-folio__cat">
-                                    Web Design
-                                </p>
-                            </div>
-    
-                            <a href="https://www.behance.net/" class="item-folio__project-link" title="Project link">
-                                <i class="icon-link"></i>
-                            </a>
-    
-                            <div class="item-folio__caption">
-                                <p>Vero molestiae sed aut natus excepturi. Et tempora numquam. Temporibus iusto quo.Unde dolorem corrupti neque nisi.</p>
-                            </div>
-    
-                        </div>
-                    </div> <!-- end masonry__brick -->
-    
-                    <div class="masonry__brick" data-aos="fade-up">
-                        <div class="item-folio">
-                                
-                            <div class="item-folio__thumb">
-                                <a href="{% static 'landing/images/portfolio/gallery/g-beetle.jpg' %}" class="thumb-link" title="The Beetle Car" data-size="1050x700">
-                                    <img src="{% static 'landing/images/portfolio/the-beetle.jpg' %}"
-                                         srcset="{% static 'landing/images/portfolio/the-beetle.jpg' %} 1x, {% static 'landing/images/portfolio/the-beetle@2x.jpg' %} 2x" alt="">
-                                </a>
-                            </div>
-    
-                            <div class="item-folio__text">
-                                <h3 class="item-folio__title">
-                                    The Beetle
-                                </h3>
-                                <p class="item-folio__cat">
-                                    Web Development
-                                </p>
-                            </div>
-    
-                            <a href="https://www.behance.net/" class="item-folio__project-link" title="Project link">
-                                <i class="icon-link"></i>
-                            </a>
-    
-                            <div class="item-folio__caption">
-                                <p>Vero molestiae sed aut natus excepturi. Et tempora numquam. Temporibus iusto quo.Unde dolorem corrupti neque nisi.</p>
-                            </div>
-    
-                        </div>
-                    </div> <!-- end masonry__brick -->
-    
-                    <div class="masonry__brick" data-aos="fade-up">
-                        <div class="item-folio">
-                                
-                            <div class="item-folio__thumb">
-                                <a href="{% static 'landing/images/portfolio/gallery/g-grow-green.jpg' %}" class="thumb-link" title="Grow Green" data-size="1050x700">
-                                    <img src="{% static 'landing/images/portfolio/grow-green.jpg' %}" 
-                                         srcset="{% static 'landing/images/portfolio/grow-green.jpg' %} 1x, {% static 'landing/images/portfolio/grow-green@2x.jpg' %} 2x" alt="">
-                                </a>
-                            </div>
-    
-                            <div class="item-folio__text">
-                                <h3 class="item-folio__title">
-                                    Grow Green
-                                </h3>
-                                <p class="item-folio__cat">
-                                    Branding
-                                </p>
-                            </div>
-    
-                            <a href="https://www.behance.net/" class="item-folio__project-link" title="Project link">
-                                <i class="icon-link"></i>
-                            </a>
-    
-                            <div class="item-folio__caption">
-                                <p>Vero molestiae sed aut natus excepturi. Et tempora numquam. Temporibus iusto quo.Unde dolorem corrupti neque nisi.</p>
-                            </div>
-    
-                        </div>
-                    </div> <!-- end masonry__brick -->
+            
+                <div class="works-grid">
+                    <!-- Real Estate -->
+                    <div class="works-item large" data-aos="fade-up">
+                        <iframe data-src="https://themewagon.github.io/VillaAgency/" title="Villa Agency"></iframe>
+                        <div class="works-label">Real Estate</div>
+                    </div>
+                    <!-- Travel -->
+                    <div class="works-item large" data-aos="fade-up">
+                        <iframe data-src="https://themewagon.github.io/tripbiz/" title="Travel"></iframe>
+                        <div class="works-label">Travel</div>
+                    </div>
+                    <div class="works-item large" data-aos="fade-up">
+                        <iframe data-src="https://themewagon.github.io/a-world/" title="iPortfolio"></iframe>
+                        <div class="works-label">Travel</div>
+                    </div>
+                    <!-- Restaurant -->
+                    <div class="works-item large" data-aos="fade-up">
+                        <iframe data-src="https://themewagon.github.io/feane/" title="Feane Restaurant"></iframe>
+                        <div class="works-label">Restaurant</div>
+                    </div>
+                    <div class="works-item large" data-aos="fade-up">
+                        <iframe data-src="https://themewagon.github.io/restaurantly/" title="Restaurantly"></iframe>
+                        <div class="works-label">Restaurant</div>
+                    </div>
+                    <div class="works-item large" data-aos="fade-up">
+                        <iframe data-src="https://themewagon.github.io/haircut/" title="Haircut Salon"></iframe>
+                        <div class="works-label">Beauty</div>
+                    </div>
 
-                    <div class="masonry__brick" data-aos="fade-up">
-                        <div class="item-folio">
-                                
-                            <div class="item-folio__thumb">
-                                <a href="{% static 'landing/images/portfolio/gallery/g-guitarist.jpg' %}" class="thumb-link" title="Guitarist" data-size="1050x700">
-                                    <img src="{% static 'landing/images/portfolio/guitarist.jpg' %}" 
-                                         srcset="{% static 'landing/images/portfolio/guitarist.jpg' %} 1x, {% static 'landing/images/portfolio/guitarist@2x.jpg' %} 2x" alt="">
-                                </a>
-                            </div>
-    
-                            <div class="item-folio__text">
-                                <h3 class="item-folio__title">
-                                    Guitarist
-                                </h3>
-                                <p class="item-folio__cat">
-                                    Web Design
-                                </p>
-                            </div>
-    
-                            <a href="https://www.behance.net/" class="item-folio__project-link" title="Project link">
-                                <i class="icon-link"></i>
-                            </a>
-    
-                            <div class="item-folio__caption">
-                                <p>Vero molestiae sed aut natus excepturi. Et tempora numquam. Temporibus iusto quo.Unde dolorem corrupti neque nisi.</p>
-                            </div>
-    
-                        </div>
-                    </div> <!-- end masonry__brick -->
-    
-                    <div class="masonry__brick" data-aos="fade-up">
-                        <div class="item-folio">
-                                
-                            <div class="item-folio__thumb">
-                                <a href="{% static 'landing/images/portfolio/gallery/g-palmeira.jpg' %}" class="thumb-link" title="Palmeira" data-size="1050x700">
-                                    <img src="{% static 'landing/images/portfolio/palmeira.jpg' %}"
-                                         srcset="{% static 'landing/images/portfolio/palmeira.jpg' %} 1x, {% static 'landing/images/portfolio/palmeira@2x.jpg' %} 2x" alt="">
-                                </a>
-                            </div>
-    
-                            <div class="item-folio__text">
-                                <h3 class="item-folio__title">
-                                    Palmeira
-                                </h3>
-                                <p class="item-folio__cat">
-                                    Web Design
-                                </p>
-                            </div>
-    
-                            <a href="https://www.behance.net/" class="item-folio__project-link" title="Project link">
-                                <i class="icon-link"></i>
-                            </a>
-    
-                            <div class="item-folio__caption">
-                                <p>Vero molestiae sed aut natus excepturi. Et tempora numquam. Temporibus iusto quo.Unde dolorem corrupti neque nisi.</p>
-                            </div>
-    
-                        </div>
-                    </div> <!-- end masonry__brick -->
-
-                </div> <!-- end masonry -->
-            </div> <!-- end col-full -->
+                    <div class="works-item large" data-aos="fade-up">
+                        <iframe data-src="https://themewagon.github.io/vegefoods/" title="Ogani Grocery"></iframe>
+                        <div class="works-label">Groceries</div>
+                    </div>
+                    <div class="works-item large" data-aos="fade-up">
+                        <iframe data-src="https://themewagon.github.io/iPortfolio/" title="iPortfolio"></iframe>
+                        <div class="works-label">Portfolio Design</div>
+                    </div>
+                </div>
+            </section>
+            
+            <style>
+                .works-grid {
+                    display: grid;
+                    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+                    gap: 20px;
+                    padding: 20px;
+                    max-width: 1600px;
+                    margin: auto;
+                }
+            
+                .works-item {
+                    position: relative;
+                    background: #fff;
+                    padding: 10px;
+                    border-radius: 8px;
+                    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                }
+            
+                .works-item.large {
+                    grid-column: span 2;
+                }
+            
+                .works-label {
+                    position: absolute;
+                    top: 10px;
+                    left: 10px;
+                    background: rgba(0,0,0,0.7);
+                    color: white;
+                    padding: 5px 10px;
+                    border-radius: 4px;
+                    font-size: 14px;
+                }
+            
+                iframe {
+                    width: 100%;
+                    height: 600px;
+                    border: none;
+                    border-radius: 8px;
+                }
+            
+                @media (max-width: 768px) {
+                    .works-grid {
+                        grid-template-columns: 1fr;
+                    }
+            
+                    .works-item.large {
+                        grid-column: span 1;
+                    }
+                }
+            </style>
+            
+            <script>
+                document.addEventListener("DOMContentLoaded", function() {
+                    const lazyLoadIframes = () => {
+                        document.querySelectorAll("iframe[data-src]").forEach(iframe => {
+                            if (iframe.getBoundingClientRect().top < window.innerHeight) {
+                                iframe.src = iframe.dataset.src;
+                                iframe.removeAttribute("data-src");
+                            }
+                        });
+                    };
+            
+                    lazyLoadIframes();
+                    window.addEventListener("scroll", lazyLoadIframes);
+                });
+            </script>
+            
         </div> <!-- end works-content -->
 
     </section> <!-- end s-works -->
@@ -492,7 +424,7 @@
 
     <!-- clients
     ================================================== -->
-    <section id="clients" class="s-clients">
+    {% comment %} <section id="clients" class="s-clients">
 
         <div class="row section-header" data-aos="fade-up">
             <div class="col-full">
@@ -568,7 +500,7 @@
             </div> <!-- end col-full -->
         </div> <!-- end client-testimonials -->
 
-    </section> <!-- end s-clients -->
+    </section> <!-- end s-clients --> {% endcomment %}
 
 
     <!-- contact
@@ -591,45 +523,60 @@
 
                 <h3 class="h6">Send Us A Message</h3>
 
-                <form name="contactForm" id="contactForm" method="post" action="" novalidate="novalidate">
+                <form name="contactForm" id="contactForm" onsubmit="sendWhatsAppMessage(event)">
                     <fieldset>
-    
-                    <div class="form-field">
-                        <input name="contactName" type="text" id="contactName" placeholder="Your Name" value="" minlength="2" required="" aria-required="true" class="full-width">
-                    </div>
-                    <div class="form-field">
-                        <input name="contactEmail" type="email" id="contactEmail" placeholder="Your Email" value="" required="" aria-required="true" class="full-width">
-                    </div>
-                    <div class="form-field">
-                        <input name="contactSubject" type="text" id="contactSubject" placeholder="Subject" value="" class="full-width">
-                    </div>
-                    <div class="form-field">
-                        <textarea name="contactMessage" id="contactMessage" placeholder="Your Message" rows="10" cols="50" required="" aria-required="true" class="full-width"></textarea>
-                    </div>
-                    <div class="form-field">
-                        <button class="full-width btn--primary">Submit</button>
-                        <div class="submit-loader">
-                            <div class="text-loader">Sending...</div>
-                            <div class="s-loader">
-                                <div class="bounce1"></div>
-                                <div class="bounce2"></div>
-                                <div class="bounce3"></div>
-                            </div>
+                
+                        <div class="form-field">
+                            <input name="contactName" type="text" id="contactName" placeholder="Your Name" required class="full-width">
                         </div>
-                    </div>
-    
+                        <div class="form-field">
+                            <input name="contactEmail" type="email" id="contactEmail" placeholder="Your Email" required class="full-width">
+                        </div>
+                        <div class="form-field">
+                            <input name="contactSubject" type="text" id="contactSubject" placeholder="Subject" class="full-width">
+                        </div>
+                        <div class="form-field">
+                            <textarea name="contactMessage" id="contactMessage" placeholder="Your Message" rows="10" required class="full-width"></textarea>
+                        </div>
+                        <div class="form-field">
+                            <button type="submit" class="full-width btn--primary">Submit</button>
+                        </div>
+                
                     </fieldset>
                 </form>
+                
+                <script>
+                function sendWhatsAppMessage(event) {
+                    event.preventDefault(); // Prevent the form from actually submitting
+                
+                    // Get form values
+                    var name = document.getElementById("contactName").value;
+                    var email = document.getElementById("contactEmail").value;
+                    var subject = document.getElementById("contactSubject").value;
+                    var message = document.getElementById("contactMessage").value;
+                
+                    // Construct the WhatsApp message
+                    var whatsappMessage = `Hello, my name is ${name}.%0AEmail: ${email}%0A%0ASubject: ${subject}%0A%0AMessage: ${message}`;
+                
+                    // WhatsApp number (without '+' and spaces)
+                    var phoneNumber = "917736500760";
+                
+                    // Open WhatsApp chat
+                    var whatsappURL = `https://wa.me/${phoneNumber}?text=${whatsappMessage}`;
+                    window.open(whatsappURL, "_blank");
+                }
+                </script>
+                
 
-                <!-- contact-warning -->
+                {% comment %} <!-- contact-warning -->
                 <div class="message-warning">
                     Something went wrong. Please try again.
-                </div> 
+                </div>  {% endcomment %}
             
-                <!-- contact-success -->
+                {% comment %} <!-- contact-success -->
                 <div class="message-success">
                     Your message was sent, thank you!<br>
-                </div>
+                </div> {% endcomment %}
 
             </div> <!-- end contact-primary -->
 
@@ -638,48 +585,62 @@
 
                     <h3 class="h6 hide-on-fullwidth">Contact Info</h3>
 
-                    <div class="cinfo">
+                    {% comment %} <div class="cinfo">
                         <h5>Where to Find Us</h5>
                         <p>
                             1600 Amphitheatre Parkway<br>
                             Mountain View, CA<br>
                             94043 US
                         </p>
-                    </div>
+                    </div> {% endcomment %}
 
                     <div class="cinfo">
                         <h5>Email Us At</h5>
                         <p>
-                            contact@Codespike Studiosite.com<br>
-                            info@Codespike Studiosite.com
+                            codespikestudio@gmail.com<br>
                         </p>
                     </div>
 
                     <div class="cinfo">
                         <h5>Call Us At</h5>
                         <p>
-                            Phone: (+63) 555 1212<br>
-                            Mobile: (+63) 555 0100<br>
-                            Fax: (+63) 555 0101
+                            Phone: (+91) 7736500760<br>
+                            {% comment %} Mobile: (+63) 555 0100<br>
+                            Fax: (+63) 555 0101 {% endcomment %}
                         </p>
                     </div>
 
                     <ul class="contact-social">
-                        <li>
+                        {% comment %} <li>
                             <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
                         </li>
                         <li>
                             <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                        </li> {% endcomment %}
+                        <li>
+                            <a href="https://www.instagram.com/codespikestudio" target="_blank">
+                                <i class="fa fa-instagram" aria-hidden="true"></i>
+                            </a>
                         </li>
                         <li>
-                            <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                            <a href="tel:+917736500760">
+                                <i class="fa fa-phone" aria-hidden="true"></i>
+                            </a>
                         </li>
                         <li>
-                            <a href="#"><i class="fa fa-behance" aria-hidden="true"></i></a>
+                            <a href="mailto:codespikestudi@gmail.com">
+                                <i class="fa fa-envelope" aria-hidden="true"></i>
+                            </a>
                         </li>
                         <li>
+                            <a href="https://wa.me/917736500760" target="_blank">
+                                <i class="fa fa-whatsapp" aria-hidden="true"></i>
+                            </a>
+                        </li>
+                        
+                        {% comment %} <li>
                             <a href="#"><i class="fa fa-dribbble" aria-hidden="true"></i></a>
-                        </li>
+                        </li> {% endcomment %}
                     </ul> <!-- end contact-social -->
 
                 </div> <!-- end contact-info -->
@@ -732,7 +693,7 @@
             <div class="col-twelve">
                 <div class="copyright">
                     <span>© Copyright Codespike Studio 2025</span> 
-                    <span>Site Template by <a href="https://www.colorlib.com/">Colorlib</a></span>	
+                    <span>Site Template by <a href="https://www.codespikestudio.onrendered.com/">Codespike Studio</a></span>	
                 </div>
 
                 <div class="go-top">
