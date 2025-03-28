@@ -66,6 +66,7 @@
                     <li><a class="smoothscroll"  href="#services" title="services">Services</a></li>
                     <li><a class="smoothscroll"  href="#works" title="works">Works</a></li>
                     <li><a class="smoothscroll"  href="#contact" title="contact">Contact</a></li>
+                    <li><a class="smoothscroll"  href="#clients" title="clients">Pricing</a></li>
                 </ul>
     
                 <p>We are a dynamic startup empowering modern businesses with full-stack e-commerce solutions. Specializing in ROI-driven web development, intelligent automation, and growth-focused digital strategies, we deliver enterprise-grade technology at startup-friendly budgets.</p>
@@ -104,7 +105,69 @@
 
     </header> <!-- end s-header -->
 
-
+    <style>
+        /* Addon Cards Styling */
+        .addons-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        
+        .addon-card {
+            background: #fff;
+            border-radius: 12px;
+            padding: 2rem;
+            box-shadow: 0 8px 30px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+            text-align: center;
+        }
+        
+        .addon-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .addon-header {
+            padding-bottom: 1.5rem;
+            border-bottom: 2px solid #eee;
+            margin-bottom: 1.5rem;
+        }
+        
+        .addon-header .card-icon {
+            font-size: 2rem;
+            color: #2E7D32;
+            margin-bottom: 1rem;
+        }
+        
+        .addon-price {
+            font-size: 1.8rem;
+            color: #1B5E20;
+            font-weight: 700;
+            margin: 1.5rem 0;
+        }
+        
+        .addon-desc {
+            display: block;
+            color: #666;
+            font-size: 1.4rem;
+            margin-top: 0.5rem;
+        }
+        
+        .addon-card .btn--primary {
+            width: 100%;
+            padding: 0.8rem;
+            font-size: 0.95rem;
+        }
+        
+        @media (max-width: 768px) {
+            .addons-grid {
+                grid-template-columns: 1fr;
+                padding: 1rem;
+            }
+        }
+        </style>
     <!-- home
     ================================================== -->
     <section id="home" class="s-home target-section" data-parallax="scroll" data-image-src="{% static 'landing/images/hero-bg.jpg' %}" data-natural-width=3000 data-natural-height=2000 data-position-y=center>
@@ -130,7 +193,7 @@
                         Start a Project
                     </a>
                     <a href="#works" class="smoothscroll btn btn--stroke">
-                        View example Designs
+                        Explore Designs
                     </a>
                 </div>
 
@@ -288,7 +351,301 @@
             </div>
         </div> <!-- end services-list -->
     </section>
-    
+    <!-- Pricing
+    ================================================== -->
+
+        <!-- clients
+    ================================================== -->
+    <section id="clients" class="s-clients">
+
+        <div class="row section-header" data-aos="fade-up">
+            <div class="col-full">
+                <h3 class="subhead">Premium Hosting Plans</h3>
+                <h1 class="display-2">Tailored Solutions for Digital Success</h1>
+            </div>
+        </div> 
+            <div class="pricing-grid">
+                <!-- Starter Pro -->
+                <div class="price-card" data-aos="fade-up">
+                    <div class="card-header">
+                        <i class="icon-paint-brush card-icon"></i>
+                        <h3>Starter Pro</h3>
+                        <div class="price-tag">
+                            <span class="amount">₹8,500</span>
+                            <span class="duration">/year</span>
+                        </div>
+                        <div class="price-badge">Micro Business</div>
+                    </div>
+                    <ul class="features-list">
+                        <li>✓ 5-Page Static Website</li>
+                        <li>✓ Unlimited Bandwidth</li>
+                        <li>✓ Free .in Domain</li>
+                        <li>✓ Basic SSL Security</li>
+                        <li>✓ 99.95% Uptime</li>
+                        <li>✓ Mobile Optimization</li>
+                    </ul>
+                    <button class="full-width btn--primary">Launch Now</button>
+                </div>
+        
+                <!-- Business Dynamic -->
+                <div class="price-card popular" data-aos="fade-up">
+                    <div class="card-header">
+                        <i class="icon-lego-block card-icon"></i>
+                        <h3>Business Dynamic</h3>
+                        <div class="price-tag">
+                            <span class="amount">₹28,500</span>
+                            <span class="duration">/6 months</span>
+                        </div>
+                        <div class="price-badge">Growing Enterprises</div>
+                    </div>
+                    <ul class="features-list">
+                        <li>✓ CMS Integration</li>
+                        <li>✓ Product Catalog</li>
+                        <li>✓ Multi-language Support</li>
+                        <li>✓ Automated Backups</li>
+                        <li>✓ 9-5 Support</li>
+                        <li>✓ 6 Months Hosting</li>
+                        <li>✓ Basic Analytics</li>
+                    </ul>
+                    <button class="full-width btn--primary">Scale Up</button>
+                </div>
+        
+                <!-- E-commerce Pro -->
+                <div class="price-card" data-aos="fade-up">
+                    <div class="card-header">
+                        <i class="icon-cube card-icon"></i>
+                        <h3>E-commerce Pro</h3>
+                        <div class="price-tag">
+                            <span class="amount">₹55,000</span>
+                            <span class="duration">/6 months</span>
+                        </div>
+                        <div class="price-badge">Online Store</div>
+                    </div>
+                    <ul class="features-list">
+                        <li>✓ Full Shopping Cart</li>
+                        <li>✓ UPI/Card Payments</li>
+                        <li>✓ Inventory Tracking</li>
+                        <li>✓ Customer CRM</li>
+                        <li>✓ GST Compliance</li>
+                        <li>✓ 24/7 Monitoring</li>
+                        <li>✓ Dedicated Support</li>
+                    </ul>
+                    <button class="full-width btn--primary">Go Premium</button>
+                </div>
+        
+                <!-- Enterprise Suite -->
+                <div class="price-card" data-aos="fade-up">
+                    <div class="card-header">
+                        <i class="icon-earth card-icon"></i>
+                        <h3>Enterprise Suite</h3>
+                        <div class="price-tag">
+                            <span class="amount">₹95,000+</span>
+                            <span class="duration">/year</span>
+                        </div>
+                        <div class="price-badge">Custom Solutions</div>
+                    </div>
+                    <ul class="features-list">
+                        <li>✓ Multi-user Dashboard</li>
+                        <li>✓ API Integrations</li>
+                        <li>✓ Advanced Security</li>
+                        <li>✓ Dedicated Server</li>
+                        <li>✓ Priority Support</li>
+                        <li>✓ SLA Guarantee</li>
+                        <li>✓ 1 Year Hosting</li>
+                    </ul>
+                    <button class="full-width btn--primary">Book Consultation</button>
+                </div>
+            </div>
+        
+
+            <div class="row section-header" data-aos="fade-up">
+                <div class="col-full">
+                    <h3 class="subhead">Premium Enhancements</h3>
+                </div>
+            </div> 
+                    <div class="addons-grid">
+                        <!-- Payment Gateway Suite -->
+                        <div class="addon-card" data-aos="fade-up">
+                            <div class="addon-header">
+                                <i class="fa fa-credit-card-alt fa-2x"></i>
+                                <h4>Payment Gateway Suite</h4>
+                                <span class="addon-desc">UPI, Cards, Crypto</span>
+                            </div>
+                            <div class="addon-price">₹18,500/year</div>
+                            <button class="btn--primary">Add to Plan</button>
+                        </div>
+
+                        <!-- SEO Master Package -->
+                        <div class="addon-card" data-aos="fade-up">
+                            <div class="addon-header">
+                                <i class="fa fa-search fa-2x"></i>
+                                <h4>SEO Master Package</h4>
+                                <span class="addon-desc">Local + Global</span>
+                            </div>
+                            <div class="addon-price">₹12,500/month</div>
+                            <button class="btn--primary">Add to Plan</button>
+                        </div>
+
+                        <!-- AI Chatbot System -->
+                        <div class="addon-card" data-aos="fade-up">
+                            <div class="addon-header">
+                                <i class="fa fa-comments-o fa-2x"></i>
+                                <h4>AI Chatbot System</h4>
+                                <span class="addon-desc">24/7 Support</span>
+                            </div>
+                            <div class="addon-price">₹8,500 setup</div>
+                            <button class="btn--primary">Add to Plan</button>
+                        </div>
+
+                        <!-- Enterprise UI/UX -->
+                        <div class="addon-card" data-aos="fade-up">
+                            <div class="addon-header">
+                                <i class="fa fa-desktop fa-2x"></i>
+                                <h4>Enterprise UI/UX</h4>
+                                <span class="addon-desc">Custom Design</span>
+                            </div>
+                            <div class="addon-price">₹24,500</div>
+                            <button class="btn--primary">Add to Plan</button>
+                        </div>
+
+                        <!-- Branding Package -->
+                        <div class="addon-card" data-aos="fade-up">
+                            <div class="addon-header">
+                                <i class="fa fa-tags fa-2x"></i>
+                                <h4>Branding Package</h4>
+                                <span class="addon-desc">Logo + Stationery</span>
+                            </div>
+                            <div class="addon-price">₹7,999</div>
+                            <button class="btn--primary">Add to Plan</button>
+                        </div>
+
+                        <!-- HR Management -->
+                        <div class="addon-card" data-aos="fade-up">
+                            <div class="addon-header">
+                                <i class="fa fa-users fa-2x"></i>
+                                <h4>HR Management</h4>
+                                <span class="addon-desc">Payroll System</span>
+                            </div>
+                            <div class="addon-price">₹14,999</div>
+                            <button class="btn--primary">Add to Plan</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </section>
+        
+        <style>
+        .pricing-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        
+        .price-card {
+            background: white;
+            border-radius: 15px;
+            padding: 2rem;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+            transition: transform 0.3s ease;
+            position: relative;
+        }
+        
+        .price-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .card-header {
+            text-align: center;
+            padding-bottom: 1.5rem;
+            border-bottom: 2px solid #e8f5e9;
+        }
+        
+        .price-tag {
+            margin: 1.5rem 0;
+        }
+        
+        .currency {
+            font-size: 1.5rem;
+            color: #4CAF50;
+            vertical-align: super;
+        }
+        
+        .amount {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: #2E7D32;
+        }
+        
+        .duration {
+            color: #666;
+            font-size: 0.9rem;
+        }
+        
+        .features-list {
+            list-style: none;
+            padding: 1.5rem 0;
+            margin: 0;
+        }
+        
+        .features-list li {
+            padding: 0.8rem 0;
+            display: flex;
+            align-items: center;
+        }
+        
+        .check-icon {
+            color: #4CAF50;
+            margin-right: 0.8rem;
+            font-weight: bold;
+        }
+        
+        .cta-btn {
+            display: block;
+            text-align: center;
+            background: #4CAF50;
+            color: white;
+            padding: 1rem;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: background 0.3s ease;
+        }
+        
+        .cta-btn:hover {
+            background: #45a049;
+        }
+        
+        .popular {
+            border: 2px solid #4CAF50;
+        }
+        
+        .popular-badge {
+            position: absolute;
+            top: -15px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: #4CAF50;
+            color: white;
+            padding: 0.5rem 1.5rem;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: 600;
+        }
+        
+        @media (max-width: 768px) {
+            .pricing-grid {
+                grid-template-columns: 1fr;
+                padding: 1rem;
+            }
+        }
+        </style>
+    </div> <!-- end client-testimonials -->
+
+</section> <!-- end s-clients -->
 
 
     <!-- works
@@ -430,85 +787,7 @@
     </section> <!-- end s-works -->
 
 
-    <!-- clients
-    ================================================== -->
-    {% comment %} <section id="clients" class="s-clients">
 
-        <div class="row section-header" data-aos="fade-up">
-            <div class="col-full">
-                <h3 class="subhead">Our Clients</h3>
-                <h1 class="display-2">Codespike Studio has been honored to
-                partner up with these clients</h1>
-            </div>
-        </div> <!-- end section-header -->
-
-        <div class="row clients-outer" data-aos="fade-up">
-            <div class="col-full">
-                <div class="clients">
-                    
-                    <a href="#0" title="" class="clients__slide"><img src="{% static 'landing/images/clients/apple.png' %}" /></a>
-                    <a href="#0" title="" class="clients__slide"><img src="{% static 'landing/images/clients/atom.png' %}" /></a>
-                    <a href="#0" title="" class="clients__slide"><img src="{% static 'landing/images/clients/blackberry.png' %}" /></a>
-                    <a href="#0" title="" class="clients__slide"><img src="{% static 'landing/images/clients/dropbox.png' %}" /></a>
-                    <a href="#0" title="" class="clients__slide"><img src="{% static 'landing/images/clients/envato.png' %}" /></a>
-                    <a href="#0" title="" class="clients__slide"><img src="{% static 'landing/images/clients/firefox.png' %}" /></a>
-                    <a href="#0" title="" class="clients__slide"><img src="{% static 'landing/images/clients/joomla.png' %}" /></a>
-                    <a href="#0" title="" class="clients__slide"><img src="{% static 'landing/images/clients/magento.png' %}" /></a>
-                     
-                </div> <!-- end clients -->
-            </div> <!-- end col-full -->
-        </div> <!-- end clients-outer -->
-
-        <div class="row clients-testimonials" data-aos="fade-up">
-            <div class="col-full">
-                <div class="testimonials">
-
-                    <div class="testimonials__slide">
-
-                        <p>Qui ipsam temporibus quisquam vel. Maiores eos cumque distinctio nam accusantium ipsum. 
-                        Laudantium quia consequatur molestias delectus culpa facere hic dolores aperiam. Accusantium quos qui praesentium corpori.
-                        Excepturi nam cupiditate culpa doloremque deleniti repellat.</p>
-
-                        <img src="{% static 'landing/images/avatars/user-01.jpg' %}" alt="Author image" class="testimonials__avatar">
-                        <div class="testimonials__info">
-                            <span class="testimonials__name">Tim Cook</span> 
-                            <span class="testimonials__pos">CEO, Apple</span>
-                        </div>
-
-                    </div>
-
-                    <div class="testimonials__slide">
-                        
-                        <p>Excepturi nam cupiditate culpa doloremque deleniti repellat. Veniam quos repellat voluptas animi adipisci.
-                        Nisi eaque consequatur. Quasi voluptas eius distinctio. Atque eos maxime. Qui ipsam temporibus quisquam vel.</p>
-
-                        <img src="{% static 'landing/images/avatars/user-05.jpg' %}" alt="Author image" class="testimonials__avatar">
-                        <div class="testimonials__info">
-                            <span class="testimonials__name">Sundar Pichai</span> 
-                            <span class="testimonials__pos">CEO, Google</span>
-                        </div>
-
-                    </div>
-
-                    <div class="testimonials__slide">
-                        
-                        <p>Repellat dignissimos libero. Qui sed at corrupti expedita voluptas odit. Nihil ea quia nesciunt. Ducimus aut sed ipsam.  
-                        Autem eaque officia cum exercitationem sunt voluptatum accusamus. Quasi voluptas eius distinctio.</p>
-
-                        <img src="{% static 'landing/images/avatars/user-02.jpg' %}" alt="Author image" class="testimonials__avatar">
-                        <div class="testimonials__info">
-                            <span class="testimonials__name">Satya Nadella</span> 
-                            <span class="testimonials__pos">CEO, Microsoft</span>
-                        </div>
-
-                    </div>
-
-                </div><!-- end testimonials -->
-                
-            </div> <!-- end col-full -->
-        </div> <!-- end client-testimonials -->
-
-    </section> <!-- end s-clients --> {% endcomment %}
 
 
     <!-- contact
@@ -705,6 +984,10 @@
         }
         .s-work{
             padding-top: 10.2rem !important;
+        }
+        s-clients{
+            padding-top: 10.2rem !important;
+            
         }
     </style>
 
